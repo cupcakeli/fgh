@@ -1,0 +1,1743 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ETERNA | Jewelry House</title>
+
+<style>
+
+/* =========================
+   ETERNA
+   BLACK / SILVER LUXURY
+   ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap');
+
+
+/* =========================
+   GLOBAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b0b0c;
+    color: #f1f1f3;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 300;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+.header {
+    height: 82px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(11, 11, 12, 0.92);
+    border-bottom: 1px solid #27272a;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    backdrop-filter: blur(18px);
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: 11px;
+    color: #eeeeef;
+}
+
+.navigation {
+    display: flex;
+    gap: 43px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #a7a7ad;
+
+    font-size: 9px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+
+    transition: 0.35s ease;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header-icons span {
+    color: #bdbdc2;
+    font-size: 17px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.header-icons span:hover {
+    color: white;
+}
+
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    height: calc(100vh - 82px);
+    min-height: 650px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.82),
+            rgba(0,0,0,0.48),
+            rgba(0,0,0,0.18)
+        ),
+        url("images/home.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    margin-left: 9%;
+    max-width: 700px;
+}
+
+.hero-label {
+    font-size: 9px;
+    letter-spacing: 6px;
+    color: #bfc0c4;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(75px, 10vw, 135px);
+
+    line-height: 0.78;
+    font-weight: 300;
+    letter-spacing: -2px;
+
+    color: #f5f5f6;
+}
+
+.hero-description {
+    max-width: 430px;
+
+    margin-top: 38px;
+
+    color: #c4c4c8;
+
+    font-size: 12px;
+    line-height: 2;
+
+    letter-spacing: 0.3px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 34px;
+
+    padding: 16px 35px;
+
+    border: 1px solid #aaaab0;
+
+    color: #eeeeef;
+
+    text-decoration: none;
+
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    transition: 0.4s ease;
+}
+
+.hero-button:hover {
+    background: #f1f1f2;
+    color: #111113;
+    border-color: #f1f1f2;
+}
+
+.scroll {
+    position: absolute;
+
+    bottom: 34px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #99999f;
+
+    font-size: 8px;
+    letter-spacing: 4px;
+}
+
+.scroll::after {
+    content: "";
+    display: block;
+
+    width: 1px;
+    height: 45px;
+
+    background: #77777d;
+
+    margin: 12px auto 0;
+}
+
+
+/* =========================
+   INTRODUCTION
+   ========================= */
+
+.introduction {
+    padding: 145px 12%;
+
+    background: #0b0b0c;
+
+    text-align: center;
+}
+
+.introduction-label {
+    font-size: 9px;
+    letter-spacing: 5px;
+
+    color: #929298;
+}
+
+.introduction h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    font-weight: 300;
+    line-height: 0.95;
+
+    color: #eeeeef;
+
+    margin: 25px 0 30px;
+}
+
+.introduction p {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #88888f;
+
+    font-size: 12px;
+    line-height: 2.2;
+}
+
+
+/* =========================
+   CATEGORY SECTION
+   ========================= */
+
+.categories-section {
+    padding: 30px 5% 140px;
+
+    background: #0b0b0c;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-heading span {
+    display: block;
+
+    font-size: 9px;
+    letter-spacing: 5px;
+
+    color: #929298;
+
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 62px;
+
+    font-weight: 300;
+
+    color: #eeeeef;
+}
+
+.categories {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.category {
+    position: relative;
+
+    height: 540px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    background: #171719;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0.82;
+
+    filter: grayscale(18%);
+
+    transition:
+        transform 1s ease,
+        opacity 0.7s ease,
+        filter 0.7s ease;
+}
+
+.category:hover img {
+    transform: scale(1.055);
+
+    opacity: 0.95;
+
+    filter: grayscale(0%);
+}
+
+.category::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 35% 0 0;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.9)
+        );
+}
+
+.category-text {
+    position: absolute;
+
+    bottom: 32px;
+    left: 30px;
+
+    color: white;
+
+    z-index: 3;
+}
+
+.category-text h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 40px;
+
+    font-weight: 400;
+}
+
+.category-text p {
+    font-size: 8px;
+
+    letter-spacing: 4px;
+
+    color: #bdbdc2;
+
+    margin-top: 7px;
+}
+
+
+/* =========================
+   EDITORIAL BANNER
+   ========================= */
+
+.editorial {
+    height: 680px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.48),
+            rgba(0,0,0,0.58)
+        ),
+        url("images/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.editorial::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 25px;
+
+    border: 1px solid rgba(255,255,255,0.14);
+
+    pointer-events: none;
+}
+
+.editorial-content {
+    position: relative;
+    z-index: 2;
+}
+
+.editorial-content span {
+    font-size: 9px;
+
+    letter-spacing: 6px;
+
+    color: #c6c6ca;
+}
+
+.editorial-content h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(65px, 9vw, 110px);
+
+    font-weight: 300;
+
+    line-height: 0.9;
+
+    margin: 20px 0;
+
+    color: #f3f3f4;
+}
+
+.editorial-content p {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #c4c4c7;
+}
+
+
+/* =========================
+   FEATURED COLLECTION
+   ========================= */
+
+.collection {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 760px;
+}
+
+.collection-image {
+    overflow: hidden;
+
+    background: #111113;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(15%);
+}
+
+.collection-content {
+    background: #151517;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 12%;
+}
+
+.collection-inner {
+    max-width: 450px;
+}
+
+.collection-inner span {
+    color: #9d9da3;
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+}
+
+.collection-inner h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 78px;
+
+    line-height: 0.82;
+
+    font-weight: 300;
+
+    color: #ededee;
+
+    margin: 25px 0 30px;
+}
+
+.collection-inner p {
+    color: #8f8f95;
+
+    font-size: 12px;
+
+    line-height: 2.1;
+}
+
+.collection-button {
+    display: inline-block;
+
+    margin-top: 32px;
+
+    padding: 15px 34px;
+
+    border: 1px solid #67676d;
+
+    text-decoration: none;
+
+    color: #dedee1;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    transition: 0.4s ease;
+}
+
+.collection-button:hover {
+    background: #eeeeef;
+
+    border-color: #eeeeef;
+
+    color: #111113;
+}
+
+
+/* =========================
+   PRODUCT SHOWCASE
+   ========================= */
+
+.showcase {
+    background: #09090a;
+
+    padding: 140px 5%;
+
+    color: white;
+}
+
+.showcase-heading {
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+.showcase-heading span {
+    font-size: 9px;
+
+    letter-spacing: 5px;
+
+    color: #909096;
+}
+
+.showcase-heading h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 68px;
+
+    font-weight: 300;
+
+    color: #eeeeef;
+
+    margin-top: 17px;
+}
+
+.products {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 14px;
+}
+
+.product {
+    background: #151517;
+
+    border: 1px solid #242427;
+
+    transition: 0.4s ease;
+}
+
+.product:hover {
+    border-color: #505056;
+
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 430px;
+
+    overflow: hidden;
+
+    background: #101012;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(12%);
+
+    transition:
+        transform 0.8s ease,
+        filter 0.8s ease;
+}
+
+.product:hover .product-image img {
+    transform: scale(1.05);
+
+    filter: grayscale(0%);
+}
+
+.product-details {
+    padding: 24px;
+}
+
+.product-details h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: #eeeeef;
+}
+
+.product-details p {
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #77777e;
+
+    text-transform: uppercase;
+
+    margin-top: 7px;
+}
+
+
+/* =========================
+   PHILOSOPHY
+   ========================= */
+
+.philosophy {
+    padding: 145px 12%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 100px;
+
+    background: #111113;
+}
+
+.philosophy-label {
+    color: #929298;
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+}
+
+.philosophy h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 75px;
+
+    font-weight: 300;
+
+    line-height: 0.84;
+
+    color: #eeeeef;
+
+    margin: 24px 0 35px;
+}
+
+.philosophy p {
+    color: #89898f;
+
+    font-size: 12px;
+
+    line-height: 2.15;
+
+    max-width: 510px;
+
+    margin-bottom: 18px;
+}
+
+.philosophy-symbol {
+    text-align: center;
+}
+
+.symbol {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 300px;
+
+    font-weight: 300;
+
+    line-height: 0.65;
+
+    color: transparent;
+
+    -webkit-text-stroke: 1px #7c7c82;
+
+    opacity: 0.8;
+}
+
+.symbol-caption {
+    font-size: 8px;
+
+    letter-spacing: 5px;
+
+    color: #77777d;
+
+    margin-top: 55px;
+}
+
+
+/* =========================
+   NEWSLETTER
+   ========================= */
+
+.newsletter {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background: #e7e7e9;
+
+    color: #111113;
+}
+
+.newsletter span {
+    color: #6e6e74;
+
+    font-size: 9px;
+
+    letter-spacing: 5px;
+}
+
+.newsletter h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 64px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+    margin: 20px 0;
+}
+
+.newsletter p {
+    font-size: 11px;
+
+    color: #5f5f64;
+
+    margin-bottom: 32px;
+}
+
+.newsletter-form {
+    display: inline-flex;
+
+    border-bottom: 1px solid #252527;
+}
+
+.newsletter-form input {
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 12px;
+
+    width: 280px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 11px;
+}
+
+.newsletter-form button {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #111113;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background: #080809;
+
+    color: #77777d;
+
+    padding: 75px 6% 30px;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+
+    gap: 40px;
+}
+
+.footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+
+    color: #eeeeef;
+
+    font-size: 36px;
+
+    letter-spacing: 10px;
+}
+
+.footer-description {
+    max-width: 300px;
+
+    font-size: 10px;
+
+    line-height: 2;
+
+    margin-top: 20px;
+
+    color: #69696f;
+}
+
+footer h4 {
+    color: #dedee1;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 21px;
+}
+
+footer a {
+    display: block;
+
+    color: #77777d;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    margin-bottom: 13px;
+
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+
+    border-top: 1px solid #242427;
+
+    margin-top: 60px;
+
+    padding-top: 27px;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #55555b;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .categories {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-image {
+        height: 600px;
+    }
+
+    .philosophy {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        height: 75px;
+    }
+
+    .logo {
+        font-size: 24px;
+
+        letter-spacing: 7px;
+    }
+
+    .hero {
+        height: 650px;
+    }
+
+    .hero-content {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .hero-title {
+        font-size: 67px;
+    }
+
+    .categories,
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .category {
+        height: 450px;
+    }
+
+    .section-heading h2 {
+        font-size: 49px;
+    }
+
+    .editorial {
+        height: 520px;
+    }
+
+    .editorial::before {
+        inset: 15px;
+    }
+
+    .collection-image {
+        height: 450px;
+    }
+
+    .collection-inner h2 {
+        font-size: 60px;
+    }
+
+    .philosophy {
+        padding: 100px 8%;
+    }
+
+    .philosophy h2 {
+        font-size: 57px;
+    }
+
+    .symbol {
+        font-size: 220px;
+    }
+
+    .newsletter h2 {
+        font-size: 48px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+     ========================= -->
+
+<header class="header">
+
+    <div class="logo">
+        ETERNA
+    </div>
+
+    <nav class="navigation">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#collections">
+            Collections
+        </a>
+
+        <a href="#featured">
+            Featured
+        </a>
+
+        <a href="#heritage">
+            Heritage
+        </a>
+
+    </nav>
+
+    <div class="header-icons">
+
+        <span title="Search">
+            ⌕
+        </span>
+
+        <span title="Wishlist">
+            ♡
+        </span>
+
+        <span title="Shopping Bag">
+            ♧
+        </span>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+     ========================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            Maison Eterna
+        </div>
+
+        <h1 class="hero-title">
+            Eternal<br>
+            by Design.
+        </h1>
+
+        <p class="hero-description">
+            Jewelry conceived beyond the season.
+            Refined silhouettes, luminous details,
+            and craftsmanship created to endure.
+        </p>
+
+        <a href="#collections" class="hero-button">
+            Discover Eterna
+        </a>
+
+    </div>
+
+    <div class="scroll">
+        SCROLL TO DISCOVER
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     INTRODUCTION
+     ========================= -->
+
+<section class="introduction">
+
+    <div class="introduction-label">
+        THE HOUSE OF ETERNA
+    </div>
+
+    <h2>
+        Where darkness<br>
+        meets brilliance.
+    </h2>
+
+    <p>
+        Eterna is a premium jewelry house devoted to
+        timeless design. Created for both women and men,
+        each collection reflects refined proportions,
+        exceptional craftsmanship, and an enduring
+        philosophy of sophistication.
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     SHOP BY CATEGORY
+     ========================= -->
+
+<section class="categories-section" id="collections">
+
+    <div class="section-heading">
+
+        <span>
+            EXPLORE THE HOUSE
+        </span>
+
+        <h2>
+            Shop by Category
+        </h2>
+
+    </div>
+
+
+    <div class="categories">
+
+
+        <a href="#rings" class="category">
+
+            <img
+                src="images/rings.jpg"
+                alt="Eterna Rings"
+            >
+
+            <div class="category-text">
+
+                <h3>
+                    Rings
+                </h3>
+
+                <p>
+                    DISCOVER
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="#earrings" class="category">
+
+            <img
+                src="images/earrings.jpg"
+                alt="Eterna Earrings"
+            >
+
+            <div class="category-text">
+
+                <h3>
+                    Earrings
+                </h3>
+
+                <p>
+                    DISCOVER
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="#bracelets" class="category">
+
+            <img
+                src="images/bracelet.jpg"
+                alt="Eterna Bracelets"
+            >
+
+            <div class="category-text">
+
+                <h3>
+                    Bracelets
+                </h3>
+
+                <p>
+                    DISCOVER
+                </p>
+
+            </div>
+
+        </a>
+
+
+
+        <a href="#necklaces" class="category">
+
+            <img
+                src="images/necklace.jpg"
+                alt="Eterna Necklaces"
+            >
+
+            <div class="category-text">
+
+                <h3>
+                    Necklaces
+                </h3>
+
+                <p>
+                    DISCOVER
+                </p>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EDITORIAL
+     ========================= -->
+
+<section class="editorial">
+
+    <div class="editorial-content">
+
+        <span>
+            ETERNA 2026
+        </span>
+
+        <h2>
+            Eternal Radiance
+        </h2>
+
+        <p>
+            THE ART OF JEWELRY, DISTILLED TO ITS ESSENCE.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FEATURED COLLECTION
+     ========================= -->
+
+<section class="collection" id="featured">
+
+
+    <div class="collection-image">
+
+        <img
+            src="images/banner.jpg"
+            alt="Eterna Signature Collection"
+        >
+
+    </div>
+
+
+    <div class="collection-content">
+
+        <div class="collection-inner">
+
+            <span>
+                THE SIGNATURE COLLECTION
+            </span>
+
+            <h2>
+                Quietly<br>
+                Extraordinary.
+            </h2>
+
+            <p>
+                Designed to complement the individual,
+                Eterna's signature pieces embody
+                understated luxury. Every curve,
+                reflection, and detail is considered
+                to create jewelry that transcends
+                the moment.
+            </p>
+
+            <a
+                href="#pieces"
+                class="collection-button"
+            >
+                Explore the Collection
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     HOUSE SIGNATURES
+     ========================= -->
+
+<section class="showcase" id="pieces">
+
+
+    <div class="showcase-heading">
+
+        <span>
+            THE ETERNA COLLECTION
+        </span>
+
+        <h2>
+            House Signatures
+        </h2>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <article
+            class="product"
+            id="rings"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="images/rings.jpg"
+                    alt="Eterna Elan Ring"
+                >
+
+            </div>
+
+            <div class="product-details">
+
+                <h3>
+                    Élan
+                </h3>
+
+                <p>
+                    Signature Ring
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="product"
+            id="earrings"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="images/earrings.jpg"
+                    alt="Eterna Lumiere Earrings"
+                >
+
+            </div>
+
+            <div class="product-details">
+
+                <h3>
+                    Lumière
+                </h3>
+
+                <p>
+                    Signature Earrings
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="product"
+            id="bracelets"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="images/bracelet.jpg"
+                    alt="Eterna Eternite Bracelet"
+                >
+
+            </div>
+
+            <div class="product-details">
+
+                <h3>
+                    Éternité
+                </h3>
+
+                <p>
+                    Signature Bracelet
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="product"
+            id="necklaces"
+        >
+
+            <div class="product-image">
+
+                <img
+                    src="images/necklace.jpg"
+                    alt="Eterna Aurelia Necklace"
+                >
+
+            </div>
+
+            <div class="product-details">
+
+                <h3>
+                    Aurelia
+                </h3>
+
+                <p>
+                    Signature Necklace
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PHILOSOPHY
+     ========================= -->
+
+<section
+    class="philosophy"
+    id="heritage"
+>
+
+
+    <div>
+
+        <div class="philosophy-label">
+            OUR PHILOSOPHY
+        </div>
+
+        <h2>
+            A legacy<br>
+            in every detail.
+        </h2>
+
+        <p>
+            Eterna was created around a simple idea:
+            true luxury should remain beautiful beyond
+            the moment.
+        </p>
+
+        <p>
+            Our designs combine contemporary refinement
+            with the timeless language of fine jewelry.
+            Each piece is conceived to become part of
+            a personal story.
+        </p>
+
+        <p>
+            From the first sketch to the final polish,
+            craftsmanship remains at the heart of
+            everything we create.
+        </p>
+
+    </div>
+
+
+    <div class="philosophy-symbol">
+
+        <div class="symbol">
+            E
+        </div>
+
+        <div class="symbol-caption">
+            ETERNA · EST. 2026
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     NEWSLETTER
+     ========================= -->
+
+<section class="newsletter">
+
+    <span>
+        THE ETERNA JOURNAL
+    </span>
+
+    <h2>
+        Enter the world of Eterna.
+    </h2>
+
+    <p>
+        Discover collections, stories and private house events.
+    </p>
+
+
+    <form class="newsletter-form">
+
+        <input
+            type="email"
+            placeholder="Your email address"
+        >
+
+        <button type="submit">
+            SUBSCRIBE
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+     ========================= -->
+
+<footer>
+
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <div class="footer-logo">
+                ETERNA
+            </div>
+
+            <div class="footer-description">
+
+                A premium jewelry house devoted
+                to timeless design, craftsmanship,
+                and eternal sophistication.
+
+            </div>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                EXPLORE
+            </h4>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#collections">
+                Collections
+            </a>
+
+            <a href="#featured">
+                Featured
+            </a>
+
+            <a href="#heritage">
+                Heritage
+            </a>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                CLIENT CARE
+            </h4>
+
+            <a href="#">
+                Contact
+            </a>
+
+            <a href="#">
+                Shipping
+            </a>
+
+            <a href="#">
+                Returns
+            </a>
+
+            <a href="#">
+                Care Guide
+            </a>
+
+        </div>
+
+
+
+        <div>
+
+            <h4>
+                FOLLOW ETERNA
+            </h4>
+
+            <a href="#">
+                Instagram
+            </a>
+
+            <a href="#">
+                Facebook
+            </a>
+
+            <a href="#">
+                Pinterest
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 ETERNA JEWELRY HOUSE
+        · ALL RIGHTS RESERVED
+
+    </div>
+
+
+</footer>
+
+
+</body>
+
+</html>
+```
